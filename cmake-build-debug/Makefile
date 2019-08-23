@@ -123,6 +123,33 @@ WebServer/fast:
 	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/build
 .PHONY : WebServer/fast
 
+Library/ParseUrl/Parse.o: Library/ParseUrl/Parse.cpp.o
+
+.PHONY : Library/ParseUrl/Parse.o
+
+# target to build an object file
+Library/ParseUrl/Parse.cpp.o:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o
+.PHONY : Library/ParseUrl/Parse.cpp.o
+
+Library/ParseUrl/Parse.i: Library/ParseUrl/Parse.cpp.i
+
+.PHONY : Library/ParseUrl/Parse.i
+
+# target to preprocess a source file
+Library/ParseUrl/Parse.cpp.i:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.i
+.PHONY : Library/ParseUrl/Parse.cpp.i
+
+Library/ParseUrl/Parse.s: Library/ParseUrl/Parse.cpp.s
+
+.PHONY : Library/ParseUrl/Parse.s
+
+# target to generate assembly for a file
+Library/ParseUrl/Parse.cpp.s:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.s
+.PHONY : Library/ParseUrl/Parse.cpp.s
+
 NewProcess/NewProcess.o: NewProcess/NewProcess.cpp.o
 
 .PHONY : NewProcess/NewProcess.o
@@ -177,6 +204,60 @@ NewProcess/WriteResponse/WriteResponse.cpp.s:
 	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.s
 .PHONY : NewProcess/WriteResponse/WriteResponse.cpp.s
 
+StaticFiles/Check/Check.o: StaticFiles/Check/Check.cpp.o
+
+.PHONY : StaticFiles/Check/Check.o
+
+# target to build an object file
+StaticFiles/Check/Check.cpp.o:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o
+.PHONY : StaticFiles/Check/Check.cpp.o
+
+StaticFiles/Check/Check.i: StaticFiles/Check/Check.cpp.i
+
+.PHONY : StaticFiles/Check/Check.i
+
+# target to preprocess a source file
+StaticFiles/Check/Check.cpp.i:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.i
+.PHONY : StaticFiles/Check/Check.cpp.i
+
+StaticFiles/Check/Check.s: StaticFiles/Check/Check.cpp.s
+
+.PHONY : StaticFiles/Check/Check.s
+
+# target to generate assembly for a file
+StaticFiles/Check/Check.cpp.s:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.s
+.PHONY : StaticFiles/Check/Check.cpp.s
+
+StaticFiles/UploadFile/UploadFile.o: StaticFiles/UploadFile/UploadFile.cpp.o
+
+.PHONY : StaticFiles/UploadFile/UploadFile.o
+
+# target to build an object file
+StaticFiles/UploadFile/UploadFile.cpp.o:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o
+.PHONY : StaticFiles/UploadFile/UploadFile.cpp.o
+
+StaticFiles/UploadFile/UploadFile.i: StaticFiles/UploadFile/UploadFile.cpp.i
+
+.PHONY : StaticFiles/UploadFile/UploadFile.i
+
+# target to preprocess a source file
+StaticFiles/UploadFile/UploadFile.cpp.i:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.i
+.PHONY : StaticFiles/UploadFile/UploadFile.cpp.i
+
+StaticFiles/UploadFile/UploadFile.s: StaticFiles/UploadFile/UploadFile.cpp.s
+
+.PHONY : StaticFiles/UploadFile/UploadFile.s
+
+# target to generate assembly for a file
+StaticFiles/UploadFile/UploadFile.cpp.s:
+	$(MAKE) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.s
+.PHONY : StaticFiles/UploadFile/UploadFile.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -213,12 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... WebServer"
+	@echo "... Library/ParseUrl/Parse.o"
+	@echo "... Library/ParseUrl/Parse.i"
+	@echo "... Library/ParseUrl/Parse.s"
 	@echo "... NewProcess/NewProcess.o"
 	@echo "... NewProcess/NewProcess.i"
 	@echo "... NewProcess/NewProcess.s"
 	@echo "... NewProcess/WriteResponse/WriteResponse.o"
 	@echo "... NewProcess/WriteResponse/WriteResponse.i"
 	@echo "... NewProcess/WriteResponse/WriteResponse.s"
+	@echo "... StaticFiles/Check/Check.o"
+	@echo "... StaticFiles/Check/Check.i"
+	@echo "... StaticFiles/Check/Check.s"
+	@echo "... StaticFiles/UploadFile/UploadFile.o"
+	@echo "... StaticFiles/UploadFile/UploadFile.i"
+	@echo "... StaticFiles/UploadFile/UploadFile.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

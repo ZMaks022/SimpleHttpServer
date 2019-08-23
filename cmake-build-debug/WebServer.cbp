@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.h">
+			<Option target="WebServer"/>
+		</Unit>
 		<Unit filename="/Users/user/Documents/Projects/WebServer/NewProcess/NewProcess.cpp">
 			<Option target="WebServer"/>
 		</Unit>
@@ -88,6 +94,18 @@
 			<Option target="WebServer"/>
 		</Unit>
 		<Unit filename="/Users/user/Documents/Projects/WebServer/NewProcess/WriteResponse/WriteResponse.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.h">
 			<Option target="WebServer"/>
 		</Unit>
 		<Unit filename="/Users/user/Documents/Projects/WebServer/main.cpp">

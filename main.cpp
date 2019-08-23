@@ -12,7 +12,10 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+#include "Library/ParseUrl/Parse.h"
 #include "NewProcess/NewProcess.h"
+#include "StaticFiles/Check/Check.h"
+#include "StaticFiles/UploadFile/UploadFile.h"
 
 int main(int argc, char* argv[]) {
 
@@ -62,8 +65,22 @@ int main(int argc, char* argv[]) {
          close(fd_server);
          memset(buf, 0, bufSize);
          read(fd_client, buf, bufSize-1);
-         NewProcess(buf, bufSize, fd_client);
 
+         // Check url for availability static files
+         char* url = ParseUrl(buf, bufSize);
+         if (CheckStaticFile(url)) {
+            if (!CheckAvailabilitySymbols(buf)) {
+               exit(0); // rewrite on sending header of error
+            }
+            if (!AvailableExt(buf)) {
+               exit(0); // rewrite on sending header of error
+            }
+            UploadFile(url, fd_client);
+         } else { // TODO give url in arguments to BackEnd
+            NewProcess(buf, bufSize, fd_client);
+         }
+
+         delete[] url;
          exit(0);
       }
       close(fd_client);

@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/user/Documents/Projects/WebServer/NewProcess/NewProcess.cpp
-NewProcess.h
-/Users/user/Documents/Projects/WebServer/NewProcess/NewProcess.h
+/Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.h
 
 /Users/user/Documents/Projects/WebServer/NewProcess/NewProcess.h
 stdlib.h
@@ -17,17 +15,35 @@ stdio.h
 -
 unistd.h
 -
+sys/wait.h
+-
 WriteResponse/WriteResponse.h
-/Users/user/Documents/Projects/WebServer/NewProcess/WriteResponse/WriteResponse.h
-
-/Users/user/Documents/Projects/WebServer/NewProcess/WriteResponse/WriteResponse.cpp
-WriteResponse.h
 /Users/user/Documents/Projects/WebServer/NewProcess/WriteResponse/WriteResponse.h
 
 /Users/user/Documents/Projects/WebServer/NewProcess/WriteResponse/WriteResponse.h
 string.h
 -
 unistd.h
+-
+
+/Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.h
+string.h
+-
+
+/Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.cpp
+UploadFile.h
+/Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.h
+
+/Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.h
+arpa/inet.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/stat.h
+-
+string.h
 -
 
 /Users/user/Documents/Projects/WebServer/main.cpp
@@ -55,6 +71,12 @@ sys/stat.h
 -
 fcntl.h
 -
+Library/ParseUrl/Parse.h
+/Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.h
 NewProcess/NewProcess.h
 /Users/user/Documents/Projects/WebServer/NewProcess/NewProcess.h
+StaticFiles/Check/Check.h
+/Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.h
+StaticFiles/UploadFile/UploadFile.h
+/Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.h
 

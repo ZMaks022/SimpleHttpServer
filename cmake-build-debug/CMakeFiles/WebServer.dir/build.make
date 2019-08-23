@@ -96,11 +96,53 @@ CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/user/Documents/Projects/WebServer/NewProcess/WriteResponse/WriteResponse.cpp -o CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.s
 
+CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o: CMakeFiles/WebServer.dir/flags.make
+CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o: ../StaticFiles/Check/Check.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Documents/Projects/WebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o -c /Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.cpp
+
+CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.cpp > CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.i
+
+CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/user/Documents/Projects/WebServer/StaticFiles/Check/Check.cpp -o CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.s
+
+CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o: CMakeFiles/WebServer.dir/flags.make
+CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o: ../Library/ParseUrl/Parse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Documents/Projects/WebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o -c /Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.cpp
+
+CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.cpp > CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.i
+
+CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/user/Documents/Projects/WebServer/Library/ParseUrl/Parse.cpp -o CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.s
+
+CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o: CMakeFiles/WebServer.dir/flags.make
+CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o: ../StaticFiles/UploadFile/UploadFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/user/Documents/Projects/WebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o -c /Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.cpp
+
+CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.cpp > CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.i
+
+CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/user/Documents/Projects/WebServer/StaticFiles/UploadFile/UploadFile.cpp -o CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.s
+
 # Object files for target WebServer
 WebServer_OBJECTS = \
 "CMakeFiles/WebServer.dir/main.cpp.o" \
 "CMakeFiles/WebServer.dir/NewProcess/NewProcess.cpp.o" \
-"CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.o"
+"CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.o" \
+"CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o" \
+"CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o" \
+"CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o"
 
 # External object files for target WebServer
 WebServer_EXTERNAL_OBJECTS =
@@ -108,9 +150,12 @@ WebServer_EXTERNAL_OBJECTS =
 WebServer: CMakeFiles/WebServer.dir/main.cpp.o
 WebServer: CMakeFiles/WebServer.dir/NewProcess/NewProcess.cpp.o
 WebServer: CMakeFiles/WebServer.dir/NewProcess/WriteResponse/WriteResponse.cpp.o
+WebServer: CMakeFiles/WebServer.dir/StaticFiles/Check/Check.cpp.o
+WebServer: CMakeFiles/WebServer.dir/Library/ParseUrl/Parse.cpp.o
+WebServer: CMakeFiles/WebServer.dir/StaticFiles/UploadFile/UploadFile.cpp.o
 WebServer: CMakeFiles/WebServer.dir/build.make
 WebServer: CMakeFiles/WebServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Documents/Projects/WebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable WebServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/user/Documents/Projects/WebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable WebServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WebServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
