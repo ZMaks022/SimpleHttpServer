@@ -70,14 +70,14 @@ int main(int argc, char* argv[]) {
          // Check url for availability static files
          char* url = ParseUrl(buf, bufSize);
          if (CheckStaticFile(url)) {
-            std::cout << 1 << std::endl;
             if (!CheckAvailabilitySymbols(buf)) {
+               std::cout << 1 << std::endl;
                exit(0); // rewrite on sending header of error
             }
             if (!AvailableExt(buf)) {
+               std::cout << 2 << std::endl;
                exit(0); // rewrite on sending header of error
             }
-            std::cout << 2 << std::endl;
             UploadFile(url, fd_client);
          } else { // TODO give url in arguments to BackEnd
             NewProcess(buf, bufSize, fd_client);
