@@ -11,9 +11,9 @@ void UploadFile (const char* path, int fd_client) noexcept {
    const char* home = "/home/zakhar/frontend";
    struct stat* buf;
    char fullpath[strlen(home)+strlen(path)+1];
-      cout << fullpath << endl;
    strcpy(fullpath, home);
    strcpy(fullpath, path);
+      cout << fullpath << endl;
    int fdimg = open(fullpath, O_RDONLY);
    stat(fullpath, buf);
 

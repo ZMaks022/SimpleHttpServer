@@ -78,7 +78,6 @@ int main(int argc, char* argv[]) {
                close(fd_client);
                exit(0); // rewrite on sending header of error
             }
-            std::cout << 1 << std::endl;
             UploadFile(url, fd_client);
          } else { // TODO give url in arguments to BackEnd
             NewProcess(buf, bufSize, fd_client);
