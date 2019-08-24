@@ -18,6 +18,7 @@
 #include "StaticFiles/UploadFile/UploadFile.h"
 
 int main(int argc, char* argv[]) {
+   // TODO CONFIG FILE AND STRUCT
 
    struct sockaddr_in server_addr, client_addr;
    socklen_t sin_len = sizeof(client_addr);
