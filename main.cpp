@@ -69,6 +69,7 @@ int main(int argc, char* argv[]) {
 
          // Check url for availability static files
          char* url = ParseUrl(buf, bufSize);
+         std::cout << url << std::endl;
          if (CheckStaticFile(url)) {
             if (!CheckAvailabilitySymbols(buf)) {
                exit(0); // rewrite on sending header of error
