@@ -70,11 +70,11 @@ int main(int argc, char* argv[]) {
          // Check url for availability static files
          char* url = ParseUrl(buf, bufSize);
          if (CheckStaticFile(url)) {
-            if (!CheckAvailabilitySymbols(buf)) {
+            if (!CheckAvailabilitySymbols(url)) {
                close(fd_client);
                exit(0); // rewrite on sending header of error
             }
-            if (!AvailableExt(buf)) {
+            if (!AvailableExt(url)) {
                close(fd_client);
                exit(0); // rewrite on sending header of error
             }

@@ -3,7 +3,6 @@
 //
 
 #include "Check.h"
-#include <iostream>
 
 bool CheckStaticFile (const char* string) noexcept {
    // Just check the point in string :)
@@ -31,7 +30,6 @@ bool AvailableExt (char* string) noexcept {
 
    char* res = strstr(string, ".");
    for (auto it : ext) {
-      std::cout << it << " " << res << std::endl;
       if (strcmp(it, res) == 0) {
          return  true;
       }
