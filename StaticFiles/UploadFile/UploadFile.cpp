@@ -3,12 +3,15 @@
 //
 
 #include "UploadFile.h"
+#include <iostream>
+
+using namespace std;
 
 void UploadFile (const char* path, int fd_client) noexcept {
    const char* home = "/home/zakhar/frontend";
    struct stat* buf;
    char fullpath[strlen(home)+strlen(path)+1];
-
+      cout << fullpath << endl;
    strcpy(fullpath, home);
    strcpy(fullpath, path);
    int fdimg = open(fullpath, O_RDONLY);

@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="604efce6-4072-4c75-b820-dfc59e3d08cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Configs/hosts.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StaticFiles/UploadFile/UploadFile.h" beforeDir="false" afterPath="$PROJECT_DIR$/StaticFiles/UploadFile/UploadFile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StaticFiles/UploadFile/UploadFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/StaticFiles/UploadFile/UploadFile.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,8 @@
       <workItem from="1566588078197" duration="852000" />
       <workItem from="1566628440546" duration="27000" />
       <workItem from="1566628557848" duration="18000" />
-      <workItem from="1566628670120" duration="60000" />
+      <workItem from="1566628670120" duration="781000" />
+      <workItem from="1566636566193" duration="91000" />
     </task>
     <servers />
   </component>
