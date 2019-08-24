@@ -12,7 +12,7 @@ void UploadFile (const char* path, int fd_client) noexcept {
    struct stat* buf;
    char fullpath[strlen(home)+strlen(path)+1];
    strcpy(fullpath, home);
-   strcpy(fullpath, path);
+   strcat(fullpath, path);
       cout << fullpath << endl;
    int fdimg = open(fullpath, O_RDONLY);
    stat(fullpath, buf);
