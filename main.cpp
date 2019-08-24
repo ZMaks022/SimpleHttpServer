@@ -71,11 +71,11 @@ int main(int argc, char* argv[]) {
          char* url = ParseUrl(buf, bufSize);
          if (CheckStaticFile(url)) {
             if (!CheckAvailabilitySymbols(buf)) {
-               std::cout << 1 << std::endl;
+               close(fd_client);
                exit(0); // rewrite on sending header of error
             }
             if (!AvailableExt(buf)) {
-               std::cout << 2 << std::endl;
+               close(fd_client);
                exit(0); // rewrite on sending header of error
             }
             UploadFile(url, fd_client);
