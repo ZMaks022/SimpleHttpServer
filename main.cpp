@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
    // CREATE A SOCKET
    fd_server = socket(AF_INET, SOCK_STREAM, 0);
    if (fd_server < 0) {
-      std::cout << "Error socket" << std::endl;
+      std::cerr << "Error socket" << std::endl;
       return 1;
    }
    setsockopt(fd_server, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(int));
@@ -43,11 +43,11 @@ int main(int argc, char* argv[]) {
 
    // BIND AND LISTEN
    if(bind(fd_server, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1) {
-      std::cout << "Error bind" << std::endl;
+      std::cerr << "Error bind" << std::endl;
       close(fd_server);
       return 1;
    } if (listen(fd_server, 10) == -1) {
-      std::cout << "Error listen" << std::endl;
+      std::cerr << "Error listen" << std::endl;
       close(fd_server);
       return 1;
    }
@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
    while(1) {
       fd_client = accept(fd_server, (struct sockaddr *)&client_addr, &sin_len);
       if (fd_client == -1) {
-         std::cout << "Error: can't connect to client" << std::endl;
+         std::cerr << "Error: can't connect to client" << std::endl;
          continue;
       }
 
@@ -93,17 +93,3 @@ int main(int argc, char* argv[]) {
 
    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
