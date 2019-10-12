@@ -33,13 +33,16 @@ int main(int argc, char* argv[]) {
       return 1;
    }
    setsockopt(fd_server, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(int));
-   // END
 
    // SETTING
    server_addr.sin_family = AF_INET;
    server_addr.sin_addr.s_addr = INADDR_ANY;
-   server_addr.sin_port = htons(80);
-   // END
+   int port = 8080;
+   if (argc == 2) {
+     port = std::stoi(argv[1]);
+   }
+   server_addr.sin_port = htons(port);
+   std::cout << "Server run on " << port << " port" << std::endl;
 
    // BIND AND LISTEN
    if(bind(fd_server, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1) {
@@ -51,7 +54,6 @@ int main(int argc, char* argv[]) {
       close(fd_server);
       return 1;
    }
-   // END
 
    // MAIN LOOP AND CONNECT TO CLIENT
    while(1) {
@@ -89,7 +91,6 @@ int main(int argc, char* argv[]) {
       close(fd_client);
 
    }
-   // END
 
    return 0;
 }
