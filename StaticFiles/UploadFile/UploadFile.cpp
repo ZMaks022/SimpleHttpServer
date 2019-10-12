@@ -3,9 +3,10 @@
 //
 
 #include "UploadFile.h"
+#define LINUX
 
 void UploadFile (const char* path, int fd_client) noexcept {
-   const char* home = "/home/zakhar/frontend";
+   const char* home = "../FrontEnd/public"; // frontend directory
    struct stat* buf;
    char fullpath[strlen(home)+strlen(path)+1];
    strcpy(fullpath, home);

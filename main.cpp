@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
      port = std::stoi(argv[1]);
    }
    server_addr.sin_port = htons(port);
-   cout << "Server run on " << port << " port" << endl;
+   std::cout << "Server run on " << port << " port" << std::endl;
 
    // BIND AND LISTEN
    if(bind(fd_server, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1) {
