@@ -1,7 +1,6 @@
 //
 // Created by user on 2019-08-23.
 //
-
 #include "NewProcess.h"
 
 void NewProcess(char request[], int bufSize, int fd_client) {
@@ -9,7 +8,6 @@ void NewProcess(char request[], int bufSize, int fd_client) {
    int writePipe[2];
    pipe(readPipe);
    pipe(writePipe);
-
    pid_t pid = fork();
    switch(pid) {
       case -1:
@@ -20,7 +18,7 @@ void NewProcess(char request[], int bufSize, int fd_client) {
          close(writePipe[1]);
          dup2(readPipe[1], 1);
          dup2(writePipe[0], 0);
-         execlp("DefaultBackEnd/DefaultBackEnd", "",  NULL); //your backend executable file
+         execlp("DefaultBackEnd/./DefaultBackEnd", "",  NULL); //your backend executable file
          close(readPipe[1]);
          close(writePipe[0]);
          _exit(EXIT_SUCCESS);

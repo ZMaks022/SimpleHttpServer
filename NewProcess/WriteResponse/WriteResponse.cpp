@@ -1,13 +1,11 @@
 //
 // Created by user on 2019-08-23.
 //
-
 #include "WriteResponse.h"
 
 void writeResponse (int readPipe, int fd_client) {
    const int buffSize = 1024;
    char response[buffSize] = "";
-   int l, r, i;
 
    start:
    memset(response, '\f', buffSize);
