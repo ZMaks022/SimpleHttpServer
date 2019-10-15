@@ -9,6 +9,7 @@ set ( SOURCES
   StaticFiles/Check/Check.cpp
   StaticFiles/UploadFile/UploadFile.cpp
   Library/ParseUrl/Parse.cpp
+  Options/Option.cpp
 )
 
 set ( HEADERS
@@ -17,6 +18,7 @@ set ( HEADERS
   StaticFiles/Check/Check.h
   StaticFiles/UploadFile/UploadFile.h
   Library/ParseUrl/Parse.h
+  Options/Option.h
 )
 
 add_definitions(-Wall -O2)

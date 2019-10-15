@@ -9,7 +9,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
-
+#include "../Options/Option.cpp"
+#include <string>
 #include "WriteResponse/WriteResponse.h"
 
 void NewProcess(char request[], int bufSize, int fd_client);

@@ -4,6 +4,7 @@
 #include "NewProcess.h"
 
 void NewProcess(char request[], int bufSize, int fd_client) {
+   Options& opt = Options::Instance();
    int readPipe[2];
    int writePipe[2];
    pipe(readPipe);
@@ -18,7 +19,7 @@ void NewProcess(char request[], int bufSize, int fd_client) {
          close(writePipe[1]);
          dup2(readPipe[1], 1);
          dup2(writePipe[0], 0);
-         execlp("DefaultBackEnd/./DefaultBackEnd", "",  NULL); //your backend executable file
+         execlp(opt.getBackend().c_str(), "",  NULL); //your backend executable file
          close(readPipe[1]);
          close(writePipe[0]);
          _exit(EXIT_SUCCESS);

@@ -16,9 +16,12 @@
 #include "NewProcess/NewProcess.h"
 #include "StaticFiles/Check/Check.h"
 #include "StaticFiles/UploadFile/UploadFile.h"
+#include "Options/Option.h"
 
 int main(int argc, char* argv[]) {
    // TODO CONFIG FILE AND STRUCT
+   Options& opt = Options::Instance();
+   opt.read();
 
    struct sockaddr_in server_addr, client_addr;
    socklen_t sin_len = sizeof(client_addr);
