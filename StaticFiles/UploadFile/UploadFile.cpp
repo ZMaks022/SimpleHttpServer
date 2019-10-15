@@ -1,11 +1,10 @@
 //
 // Created by user on 2019-08-23.
 //
-
 #include "UploadFile.h"
 
 void UploadFile (const char* path, int fd_client) noexcept {
-   const char* home = "DefaultFrontEnd/"; // frontend directory
+   const char* home = "DefaultFrontEnd"; // frontend directory
    struct stat* buf;
    char fullpath[strlen(home)+strlen(path)+1];
    strcpy(fullpath, home);
