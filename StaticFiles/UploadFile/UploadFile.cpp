@@ -3,10 +3,9 @@
 //
 
 #include "UploadFile.h"
-#define LINUX
 
 void UploadFile (const char* path, int fd_client) noexcept {
-   const char* home = "../FrontEnd/public"; // frontend directory
+   const char* home = "DefaultFrontEnd/"; // frontend directory
    struct stat* buf;
    char fullpath[strlen(home)+strlen(path)+1];
    strcpy(fullpath, home);
@@ -14,13 +13,7 @@ void UploadFile (const char* path, int fd_client) noexcept {
    int fdimg = open(fullpath, O_RDONLY);
    stat(fullpath, buf);
 
-   #ifdef LINUX
-      sendfile(fd_client, fdimg, 0, buf->st_size);
-   #endif
-
-   #ifdef MACOS
-      sendfile(fd_client, fdimg, 0, reinterpret_cast<off_t *>(buf->st_size), NULL, 0);
-   #endif
+   sendfile(fd_client, fdimg, 0, buf->st_size);
 
    close(fdimg);
 }

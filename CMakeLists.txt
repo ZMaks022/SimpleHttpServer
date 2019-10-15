@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(HttpServer VERSION 0.0.2)
+project(HttpServer VERSION 0.0.3)
 
 set ( SOURCES
   main.cpp
@@ -18,8 +18,6 @@ set ( HEADERS
   StaticFiles/UploadFile/UploadFile.h
   Library/ParseUrl/Parse.h
 )
-
-include_directories(${PROJECT_SOURCE_DIR})
 
 add_definitions(-Wall -O2)
 add_executable(${PROJECT_NAME}  ${SOURCES} ${HEADERS})

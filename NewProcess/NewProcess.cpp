@@ -20,7 +20,7 @@ void NewProcess(char request[], int bufSize, int fd_client) {
          close(writePipe[1]);
          dup2(readPipe[1], 1);
          dup2(writePipe[0], 0);
-         execlp("../BackEnd/main", "",  NULL); //your backend executable file
+         execlp("DefaultBackEnd/DefaultBackEnd", "",  NULL); //your backend executable file
          close(readPipe[1]);
          close(writePipe[0]);
          _exit(EXIT_SUCCESS);
