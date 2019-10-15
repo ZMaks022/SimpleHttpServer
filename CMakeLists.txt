@@ -1,13 +1,31 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
-project(HttpServer)
-set(HttpServer_VERSION 0.1)
+project(HttpServer VERSION 0.0.2)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_C_STANDARD 11)
+set ( SOURCES
+  main.cpp
+  NewProcess/NewProcess.cpp
+  NewProcess/WriteResponse/WriteResponse.cpp
+  StaticFiles/Check/Check.cpp
+  StaticFiles/UploadFile/UploadFile.cpp
+  Library/ParseUrl/Parse.cpp
+)
 
-add_definitions(-Wall -O2)
+set ( HEADERS
+  NewProcess/NewProcess.h
+  NewProcess/WriteResponse/WriteResponse.h
+  StaticFiles/Check/Check.h
+  StaticFiles/UploadFile/UploadFile.h
+  Library/ParseUrl/Parse.h
+)
 
 include_directories(${PROJECT_SOURCE_DIR})
 
-add_executable(${PROJECT_NAME} main.cpp NewProcess/NewProcess.h NewProcess/NewProcess.cpp NewProcess/WriteResponse/WriteResponse.h NewProcess/WriteResponse/WriteResponse.cpp StaticFiles/Check/Check.h StaticFiles/Check/Check.cpp Library/ParseUrl/Parse.h Library/ParseUrl/Parse.cpp StaticFiles/UploadFile/UploadFile.h StaticFiles/UploadFile/UploadFile.cpp)
+add_definitions(-Wall -O2)
+add_executable(${PROJECT_NAME}  ${SOURCES} ${HEADERS})
+
+set_target_properties(
+  ${PROJECT_NAME} PROPERTIES
+  CXX_STANDART 17
+  CXX_STANDART_REQUIRED ON
+)
