@@ -1,5 +1,7 @@
 //
-// Created by user on 2019-08-23.
+// CheckStaticFile - find point in string
+// CheckAvailabilitySymbols - is cheking available symbols get true if data is valid
+// AvailableExt - is cheking extension of static file and get true if extension is valid
 //
 
 #include "Check.h"

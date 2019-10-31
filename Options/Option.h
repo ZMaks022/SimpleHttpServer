@@ -1,10 +1,9 @@
 //
-// Created by user on 2019-08-23.
+// Class Options read option from config file and then get this information other components
 //
 
 #ifndef WEBSERVER_OPTION_H
 #define WEBSERVER_OPTION_H
-#pragma once
 #include <iostream>
 #include <fstream>
 

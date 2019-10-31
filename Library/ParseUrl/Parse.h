@@ -1,5 +1,5 @@
 //
-// Created by user on 2019-08-23.
+// ParseUrl - parse and get url.
 //
 
 #ifndef WEBSERVER_PARSE_H

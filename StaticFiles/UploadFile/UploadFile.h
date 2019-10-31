@@ -1,5 +1,5 @@
 //
-// Created by user on 2019-08-23.
+// Function UploadFile send static file using socket and path file
 //
 
 #ifndef WEBSERVER_UPLOADFILE_H

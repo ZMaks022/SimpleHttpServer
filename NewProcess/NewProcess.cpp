@@ -1,6 +1,7 @@
 //
-// Created by user on 2019-08-23.
+// NewProcess create a new child process and run some programm
 //
+
 #include "NewProcess.h"
 
 void NewProcess(char request[], int bufSize, int fd_client) {

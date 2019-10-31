@@ -1,5 +1,5 @@
 //
-// Created by user on 2019-08-23.
+// NewProcess create a new child process and run some programm
 //
 
 #ifndef WEBSERVER_NEWPROCESS_H
@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include "../Options/Option.cpp"
+#include "../Options/Option.h"
 #include <string>
 #include "WriteResponse/WriteResponse.h"
 

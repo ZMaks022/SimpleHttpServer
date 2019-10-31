@@ -1,5 +1,5 @@
 //
-// Created by user on 2019-08-23.
+// writeResponse - send all output from programm to client
 //
 
 #ifndef WEBSERVER_WRITERESPONSE_H

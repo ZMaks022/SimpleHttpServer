@@ -1,6 +1,7 @@
 //
-// Created by user on 2019-08-23.
+// writeResponse - send all output from programm to client
 //
+
 #include "WriteResponse.h"
 
 void writeResponse (int readPipe, int fd_client) {
@@ -10,7 +11,6 @@ void writeResponse (int readPipe, int fd_client) {
    start:
    memset(response, '\f', buffSize);
    read(readPipe, response, buffSize);
-
    if (response[buffSize-1] == '\f') {
       for (int i = buffSize-1; i >= 0; i++) {
          if (response[i] != '\f') {

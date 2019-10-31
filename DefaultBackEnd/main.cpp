@@ -11,7 +11,7 @@ int main() {
   request.read();
   response.header();
 
-  ReadFile("../DefaultFrontEnd/index.html");
+  ReadFile("DefaultFrontEnd/index.html");
 
   return 0;
 }

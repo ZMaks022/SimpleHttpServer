@@ -1,3 +1,7 @@
+//
+// Class Options read option from config file and then get this information other components
+//
+
 #include "Option.h"
 
 Options& Options::Instance() {
